@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Michael Tettey | Data Analyst & IT Professional | Accra, Ghana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">MT</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="contact.html" class="contact-btn">CONTACT ME</a>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="page-header-content">
+                <h1>Contact Me</h1>
+                <p>Let's connect and discuss opportunities</p>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="content-section">
+            <div class="contact-container">
+                <div class="contact-info-extended">
+                    <div class="contact-intro">
+                        <h2>Get In Touch</h2>
+                        <p>
+                            I'm always open to discussing new opportunities, collaborations, or just having a 
+                            conversation about data analysis, IT solutions, and operational optimization. Based in 
+                            Accra, Ghana, but available for remote work globally.
+                        </p>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="contact-item large">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:michaeltettey29@gmail.com">michaeltettey29@gmail.com</a>
+                                <p>Best for: Job opportunities, project inquiries, detailed discussions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item large">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+233544157983">+233 54 415 7983</a>
+                                <p>Best for: Urgent matters, interview scheduling, quick discussions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item large">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Accra, Ghana</span>
+                                <p>Available for local meetings and remote work globally</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item large">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/michaeltettey" target="_blank">linkedin.com/in/michaeltettey</a>
+                                <p>Best for: Professional networking, quick messages</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item large">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/Mtettey29" target="_blank">github.com/Mtettey29</a>
+                                <p>Best for: Code reviews, technical discussions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability">
+                        <h3>Availability</h3>
+                        <div class="availability-grid">
+                            <div class="availability-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Response Time</h4>
+                                    <p>Usually within 24 hours</p>
+                                </div>
+                            </div>
+                            <div class="availability-item">
+                                <i class="fas fa-calendar"></i>
+                                <div>
+                                    <h4>Consultation</h4>
+                                    <p>Available for meetings Mon-Fri</p>
+                                </div>
+                            </div>
+                            <div class="availability-item">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <h4>Project Status</h4>
+                                    <p>Currently accepting new opportunities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm" action="send-email-smtp.php" method="POST">
+                        <h3>Send a Message</h3>
+                        <p class="form-description">
+                            Use this form to send me a message directly. I'll get back to you as soon as possible.
+                        </p>
+                        
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group half">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" placeholder="Your Company (Optional)">
+                            </div>
+                            <div class="form-group half">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone (Optional)">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="job-opportunity">Job Opportunity</option>
+                                <option value="project-inquiry">Project Inquiry</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project, opportunity, or how I can help..." rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            <label for="newsletter">Keep me updated about your professional updates</label>
+                        </div>
+                        
+                        <!-- Hidden field to identify form source -->
+                        <input type="hidden" name="source" value="Portfolio Contact Page">
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alternative Contact Methods -->
+        <section class="content-section gray-bg">
+            <h2>Other Ways to Connect</h2>
+            <div class="alternative-contact">
+                <div class="contact-card">
+                    <i class="fas fa-download"></i>
+                    <h3>Download My CV</h3>
+                    <p>Get a detailed overview of my experience and qualifications</p>
+                    <a href="assets/Michael Tettey CV.pdf" download="Michael_Tettey_CV.pdf" class="contact-card-btn">
+                        Download PDF
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Schedule a Meeting</h3>
+                    <p>Book a consultation to discuss your project requirements</p>
+                    <a href="https://calendar.app.google/zkdhFnN6PU2ZLyj99" target="_blank" class="contact-card-btn">
+                        Schedule Call
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Professional Network</h3>
+                    <p>Connect with me through my professional network</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/michaeltettey" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Mtettey29" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Michael Tettey. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
