@@ -40,6 +40,10 @@ jspm_packages/
 
 # dotenv environment variables file
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # IDE files
 .vscode/
@@ -60,3 +64,9 @@ Thumbs.db
 # PHP files (for static hosting)
 *.php
 PHPMailer/
+
+# SECURITY: Email configuration files
+email-config.php
+config.php
+*-config.php
+*.env

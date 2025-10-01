@@ -45,49 +45,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+            // Let the form submit normally to the PHP handler
+            // Remove e.preventDefault() to allow proper form submission
             
-            // Get form data
-            const formData = new FormData(contactForm);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const subject = formData.get('subject');
-            const message = formData.get('message');
+            // Show loading message
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
             
-            // Create mailto link (as fallback since no backend is specified)
-            const mailtoLink = `mailto:michaeltettey29@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
-            
-            // Open email client
-            window.location.href = mailtoLink;
-            
-            // Show success message
-            showFormMessage('Thank you for your message! Your email client should open now.', 'success');
-            
-            // Reset form
-            contactForm.reset();
+            // Note: Form will now submit normally to send-email-smtp.php
+            // The PHP handler will show the "Thank You" message
         });
-    }
-
-    // Form message display function
-    function showFormMessage(message, type) {
-        // Remove any existing message
-        const existingMessage = document.querySelector('.form-message');
-        if (existingMessage) {
-            existingMessage.remove();
-        }
-
-        // Create new message element
-        const messageElement = document.createElement('div');
-        messageElement.className = `form-message form-message-${type}`;
-        messageElement.textContent = message;
-        
-        // Insert after form
-        contactForm.parentNode.insertBefore(messageElement, contactForm.nextSibling);
-        
-        // Remove message after 5 seconds
-        setTimeout(() => {
-            messageElement.remove();
-        }, 5000);
     }
 
     // Smooth scrolling for navigation links
