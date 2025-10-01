@@ -19,8 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $smtp_config = [
         'host' => 'smtp.gmail.com',           // Gmail SMTP server
         'port' => 587,                        // Port for TLS
-        'username' => 'michaeltettey29@gmail.com', // Your Gmail address
-        'password' => '@#1MT3tt3y1',    // Your Gmail App Password (not regular password)
+        'username' => $_ENV['GMAIL_USER'] ?? 'michaeltettey29@gmail.com', // Your Gmail address
+        'password' => $_ENV['GMAIL_APP_PASSWORD'] ?? '@#1MT3tt3y1',    // Your Gmail App Password (not regular password)
         'encryption' => PHPMailer::ENCRYPTION_STARTTLS
     ];
     
