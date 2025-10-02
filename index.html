@@ -128,24 +128,33 @@
                         <p class="project-date">June 2025</p>
                         <p class="project-description">
                             Led comprehensive OSI model-based analysis of existing university network infrastructure, 
-                            identifying critical performance bottlenecks and security vulnerabilities. Designed 
-                            hierarchical network architecture with VLAN segmentation and optimized IP subnetting schemes.
+                            identifying critical performance bottlenecks and security vulnerabilities.
                         </p>
-                        <div class="project-highlights">
-                            <ul>
-                                <li>Analyzed 1.5M network packets using Wireshark</li>
-                                <li>Achieved 3400 IP address conservation through VLSM optimization</li>
-                                <li>Identified 99.2% ARP broadcast dominance inefficiency</li>
-                                <li>Designed comprehensive security vulnerability assessment</li>
-                            </ul>
+                        <div class="project-details" id="project1-details" style="display: none;">
+                            <p class="project-description-full">
+                                Designed hierarchical network architecture with VLAN segmentation and optimized IP subnetting schemes. 
+                                Conducted in-depth packet analysis and implemented security vulnerability assessments.
+                            </p>
+                            <div class="project-highlights">
+                                <ul>
+                                    <li>Analyzed 1.5M network packets using Wireshark</li>
+                                    <li>Achieved 3400 IP address conservation through VLSM optimization</li>
+                                    <li>Identified 99.2% ARP broadcast dominance inefficiency</li>
+                                    <li>Designed comprehensive security vulnerability assessment</li>
+                                </ul>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Wireshark</span>
+                                <span class="tech-tag">VirtualBox</span>
+                                <span class="tech-tag">OSI Model</span>
+                                <span class="tech-tag">VLAN</span>
+                                <span class="tech-tag">Network Security</span>
+                            </div>
                         </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Wireshark</span>
-                            <span class="tech-tag">VirtualBox</span>
-                            <span class="tech-tag">OSI Model</span>
-                            <span class="tech-tag">VLAN</span>
-                            <span class="tech-tag">Network Security</span>
-                        </div>
+                        <button class="project-toggle-btn" onclick="toggleProject('project1')">
+                            <span class="toggle-text">More</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
                     </div>
                 </div>
                 
@@ -159,24 +168,33 @@
                         <p class="project-date">2024</p>
                         <p class="project-description">
                             Preprocessed and cleaned data from Facebook ad campaigns using Python. Analyzed key 
-                            performance indicators (KPIs) to assess campaign effectiveness and designed interactive 
-                            dashboards to display performance insights.
+                            performance indicators (KPIs) to assess campaign effectiveness.
                         </p>
-                        <div class="project-highlights">
-                            <ul>
-                                <li>Preprocessed and cleaned Facebook ad campaign data</li>
-                                <li>Analyzed campaign KPIs for effectiveness assessment</li>
-                                <li>Created interactive Power BI dashboards</li>
-                                <li>Identified underperforming campaigns for cost savings</li>
-                            </ul>
+                        <div class="project-details" id="project2-details" style="display: none;">
+                            <p class="project-description-full">
+                                Designed interactive dashboards to display performance insights and identified cost-saving 
+                                opportunities through comprehensive campaign analysis and optimization strategies.
+                            </p>
+                            <div class="project-highlights">
+                                <ul>
+                                    <li>Preprocessed and cleaned Facebook ad campaign data</li>
+                                    <li>Analyzed campaign KPIs for effectiveness assessment</li>
+                                    <li>Created interactive Power BI dashboards</li>
+                                    <li>Identified underperforming campaigns for cost savings</li>
+                                </ul>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Excel</span>
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">Data Analysis</span>
+                                <span class="tech-tag">KPI Monitoring</span>
+                            </div>
                         </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Excel</span>
-                            <span class="tech-tag">Power BI</span>
-                            <span class="tech-tag">Data Analysis</span>
-                            <span class="tech-tag">KPI Monitoring</span>
-                        </div>
+                        <button class="project-toggle-btn" onclick="toggleProject('project2')">
+                            <span class="toggle-text">More</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -185,93 +203,111 @@
         <!-- Work Experience Section -->
         <section id="experience" class="content-section">
             <h2>Current Experience</h2>
-            <div class="experience-grid">
-                <div class="experience-card current-role">
-                    <div class="company-logo">
-                        <!-- MEDIA REPLACEMENT: Add Bandwidth Global logo -->
-                        <img src="assets/images/logos/bandwidth-global-logo.png" alt="Bandwidth Global Logo" class="company-logo-img">
+            <div class="experience-timeline">
+                <!-- Bandwidth Global Experience -->
+                <div class="company-experience">
+                    <div class="company-header" onclick="toggleExperience('bandwidth-home-exp')">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <img src="assets/images/logos/bandwidth-global-logo.png" alt="Bandwidth Global Logo" class="company-logo-img">
+                            </div>
+                            <div class="company-details">
+                                <h3 class="company-name" onclick="visitCompanyWebsite('bandwidth')">Bandwidth Global</h3>
+                                <p class="company-period">December 2024 - Present</p>
+                            </div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
                     </div>
-                    <div class="experience-content">
-                        <h3>Afterhours Lead</h3>
-                        <p class="company">Bandwidth Global</p>
-                        <p class="location">Tse Addo, Accra</p>
-                        <div class="date-badge current">Dec 2024 - Present</div>
-                        
-                        <p class="role-description">
-                            Oversaw afterhours logistics operations by coordinating team workflows, handling 
-                            escalations, and providing leadership support to ensure round-the-clock efficiency.
-                        </p>
-                        <ul class="achievements">
-                            <li>Handled exceptions such as reschedules, breakdowns, or off-route concerns</li>
-                            <li>Trained and supported junior dispatchers with SOPs</li>
-                            <li>Maintained strong client relationships through clear communication</li>
-                            <li>Ensured adherence to service standards and quality protocols</li>
-                        </ul>
-                        <div class="skills-used">
-                            <span class="skill-pill">Team Leadership</span>
-                            <span class="skill-pill">Operations Management</span>
-                            <span class="skill-pill">Client Relations</span>
-                            <span class="skill-pill">Process Optimization</span>
+                    <div class="company-roles" id="bandwidth-home-exp-roles">
+                        <div class="role-item">
+                            <div class="role-content">
+                                <h4>Afterhours Lead</h4>
+                                <p class="role-duration">December 2024 - Present</p>
+                                <p class="role-description">
+                                    Oversaw afterhours logistics operations by coordinating team workflows, handling 
+                                    escalations, and providing leadership support to ensure round-the-clock efficiency.
+                                </p>
+                                <ul class="achievements">
+                                    <li>Handled exceptions such as reschedules, breakdowns, or off-route concerns with timely follow-ups and clear internal handovers</li>
+                                    <li>Trained and supported junior dispatchers, reinforcing SOPs and ensuring adherence to service standards</li>
+                                    <li>Maintained strong client relationships by delivering consistent service, clear communication, and issue resolution</li>
+                                    <li>Coordinated cross-functional teams to maintain operational efficiency during critical afterhours periods</li>
+                                </ul>
+                                <div class="skills-used">
+                                    <span class="skill-pill">Team Leadership</span>
+                                    <span class="skill-pill">Operations Management</span>
+                                    <span class="skill-pill">Client Relations</span>
+                                    <span class="skill-pill">Process Optimization</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="role-item">
+                            <div class="role-content">
+                                <h4>Executive Assistant (Client Relations Manager & Dispatcher)</h4>
+                                <p class="role-duration">September 2024 - Present</p>
+                                <p class="role-description">
+                                    Managed real-time tracking of vehicles using GPS and logistics software to monitor 
+                                    shipment progress and provide updates to clients and stakeholders.
+                                </p>
+                                <ul class="achievements">
+                                    <li>Facilitated problem-solving by providing contingency plans during emergencies such as vehicle breakdowns or traffic disruptions</li>
+                                    <li>Implemented systematic filing procedures to improve the organization and retrieval of critical paperwork for seamless operations</li>
+                                    <li>Conducted thorough performance analysis of driver movements and delivery timelines, reporting key metrics to management for process improvements</li>
+                                    <li>Streamlined communication channels between dispatch, drivers, and clients to enhance service delivery</li>
+                                </ul>
+                                <div class="skills-used">
+                                    <span class="skill-pill">GPS Systems</span>
+                                    <span class="skill-pill">Logistics Software</span>
+                                    <span class="skill-pill">Data Analysis</span>
+                                    <span class="skill-pill">Performance Metrics</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="experience-card current-role">
-                    <div class="company-logo">
-                        <!-- MEDIA REPLACEMENT: Add Bandwidth Global logo -->
-                        <img src="assets/images/logos/bandwidth-global-logo.png" alt="Bandwidth Global Logo" class="company-logo-img">
-                    </div>
-                    <div class="experience-content">
-                        <h3>Executive Assistant & Dispatcher</h3>
-                        <p class="company">Bandwidth Global</p>
-                        <p class="location">Tse Addo, Accra</p>
-                        <div class="date-badge current">Sep 2024 - Present</div>
-                        
-                        <p class="role-description">
-                            Managed real-time tracking of vehicles using GPS and logistics software to monitor 
-                            shipment progress and provide updates to clients and stakeholders.
-                        </p>
-                        <ul class="achievements">
-                            <li>Implemented systematic filing procedures for critical paperwork</li>
-                            <li>Conducted performance analysis of driver movements and delivery timelines</li>
-                            <li>Facilitated problem-solving during emergencies and traffic disruptions</li>
-                            <li>Reported key metrics to management for process improvements</li>
-                        </ul>
-                        <div class="skills-used">
-                            <span class="skill-pill">GPS Systems</span>
-                            <span class="skill-pill">Logistics Software</span>
-                            <span class="skill-pill">Data Analysis</span>
-                            <span class="skill-pill">Performance Metrics</span>
+
+                <!-- Excelerate Experience -->
+                <div class="company-experience">
+                    <div class="company-header" onclick="toggleExperience('excelerate-home-exp')">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-chart-line company-logo-icon"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3 class="company-name" onclick="visitCompanyWebsite('excelerate')">Excelerate</h3>
+                                <p class="company-period">August 2024 - September 2024</p>
+                            </div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
                         </div>
                     </div>
-                </div>
-                
-                <div class="experience-card">
-                    <div class="company-logo">
-                        <!-- MEDIA REPLACEMENT: Add Excelerate logo -->
-                        <img src="assets/images/logos/excelerate-logo.png" alt="Excelerate Logo" class="company-logo-img">
-                    </div>
-                    <div class="experience-content">
-                        <h3>Data Analyst (Intern)</h3>
-                        <p class="company">Excelerate</p>
-                        <p class="location">Remote</p>
-                        <div class="date-badge">Aug 2024 - Sep 2024</div>
-                        
-                        <p class="role-description">
-                            Assisted in gathering, cleaning, and preprocessing large datasets from various sources 
-                            to ensure data accuracy and consistency for analysis.
-                        </p>
-                        <ul class="achievements">
-                            <li>Conducted exploratory data analysis to uncover patterns and correlations</li>
-                            <li>Created detailed reports and visualizations for stakeholders</li>
-                            <li>Developed and evaluated machine learning models</li>
-                            <li>Assessed model performance using accuracy, precision, and recall metrics</li>
-                        </ul>
-                        <div class="skills-used">
-                            <span class="skill-pill">Python</span>
-                            <span class="skill-pill">Data Preprocessing</span>
-                            <span class="skill-pill">Machine Learning</span>
-                            <span class="skill-pill">Statistical Analysis</span>
+                    <div class="company-roles" id="excelerate-home-exp-roles">
+                        <div class="role-item">
+                            <div class="role-content">
+                                <h4>Data Analyst (Intern)</h4>
+                                <p class="role-duration">August 2024 - September 2024</p>
+                                <p class="role-description">
+                                    Assisted in gathering, cleaning, and preprocessing large datasets from various sources 
+                                    to ensure data accuracy and consistency for analysis.
+                                </p>
+                                <ul class="achievements">
+                                    <li>Conducted exploratory data analysis to uncover patterns, correlations, and insights, using statistical tools and visualization techniques to support decision-making</li>
+                                    <li>Created detailed reports and visualizations to communicate findings and recommendations to stakeholders, translating complex data into actionable insights</li>
+                                    <li>Helped develop and evaluate machine learning models using techniques such as regression, classification, and clustering</li>
+                                    <li>Assessed model performance using metrics like accuracy, precision, and recall to ensure reliable data-driven solutions</li>
+                                </ul>
+                                <div class="skills-used">
+                                    <span class="skill-pill">Data Analysis</span>
+                                    <span class="skill-pill">Machine Learning</span>
+                                    <span class="skill-pill">Statistical Analysis</span>
+                                    <span class="skill-pill">Data Visualization</span>
+                                    <span class="skill-pill">Python</span>
+                                    <span class="skill-pill">Data Preprocessing</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -330,7 +366,7 @@
                 </div>
                 
                 <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm" action="send-email-smtp.php" method="POST">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xzzjgbqd" method="POST">
                         <h3>Send a Message</h3>
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -362,5 +398,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="contact-handler.js"></script>
 </body>
 </html>

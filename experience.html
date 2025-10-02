@@ -38,312 +38,384 @@
 
         <!-- Work Experience Section -->
         <section class="content-section">
-            <div class="experience-grid">
-                <!-- Current Role: Afterhours Lead -->
-                <div class="experience-card current-role">
-                    <div class="company-logo">
-                        <!-- MEDIA REPLACEMENT: Add Bandwidth Global logo -->
-                        <img src="assets/images/logos/bandwidth-global-logo.png" alt="Bandwidth Global Logo" class="company-logo-img">
+            <div class="experience-timeline">
+                <!-- Bandwidth Global Experience -->
+                <div class="company-experience">
+                    <div class="company-header" onclick="toggleExperience('bandwidth-exp')">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <img src="assets/images/logos/bandwidth-global-logo.png" alt="Bandwidth Global Logo" class="company-logo-img">
+                            </div>
+                            <div class="company-details">
+                                <h3 class="company-name" onclick="visitCompanyWebsite('bandwidth')">Bandwidth Global</h3>
+                                <p class="company-period">December 2024 - Present</p>
+                            </div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
                     </div>
-                    <div class="experience-content">
-                        <h3>Afterhours Lead</h3>
-                        <p class="company">Bandwidth Global</p>
-                        <p class="location">Tse Addo, Accra</p>
-                        <div class="date-badge current">Dec 2024 - Present</div>
-                        
-                        <p class="role-description">
-                            Oversaw afterhours logistics operations by coordinating team workflows, handling escalations, 
-                            and providing leadership support to ensure round-the-clock efficiency.
-                        </p>
-                        <ul class="achievements">
-                            <li>Handled exceptions such as reschedules, breakdowns, or off-route concerns with timely follow-ups and clear internal handovers</li>
-                            <li>Trained and supported junior dispatchers, reinforcing SOPs and ensuring adherence to service standards</li>
-                            <li>Maintained strong client relationships by delivering consistent service, clear communication, and issue resolution</li>
-                            <li>Coordinated cross-functional teams to maintain operational efficiency during critical afterhours periods</li>
-                        </ul>
-                        <div class="skills-used">
-                            <span class="skill-pill">Team Leadership</span>
-                            <span class="skill-pill">Operations Management</span>
-                            <span class="skill-pill">Client Relations</span>
-                            <span class="skill-pill">Process Optimization</span>
+                    <div class="company-roles" id="bandwidth-exp-roles">
+                        <div class="role-item">
+                            <div class="role-content">
+                                <h4>Afterhours Lead</h4>
+                                <p class="role-duration">December 2024 - Present</p>
+                                <p class="role-description">
+                                    Oversaw afterhours logistics operations by coordinating team workflows, handling 
+                                    escalations, and providing leadership support to ensure round-the-clock efficiency.
+                                </p>
+                                <ul class="achievements">
+                                    <li>Handled exceptions such as reschedules, breakdowns, or off-route concerns with timely follow-ups and clear internal handovers</li>
+                                    <li>Trained and supported junior dispatchers, reinforcing SOPs and ensuring adherence to service standards</li>
+                                    <li>Maintained strong client relationships by delivering consistent service, clear communication, and issue resolution</li>
+                                    <li>Coordinated cross-functional teams to maintain operational efficiency during critical afterhours periods</li>
+                                </ul>
+                                <div class="skills-used">
+                                    <span class="skill-pill">Team Leadership</span>
+                                    <span class="skill-pill">Operations Management</span>
+                                    <span class="skill-pill">Client Relations</span>
+                                    <span class="skill-pill">Process Optimization</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="role-item">
+                            <div class="role-content">
+                                <h4>Executive Assistant (Client Relations Manager & Dispatcher)</h4>
+                                <p class="role-duration">September 2024 - Present</p>
+                                <p class="role-description">
+                                    Managed real-time tracking of vehicles using GPS and logistics software to monitor 
+                                    shipment progress and provide updates to clients and stakeholders.
+                                </p>
+                                <ul class="achievements">
+                                    <li>Facilitated problem-solving by providing contingency plans during emergencies such as vehicle breakdowns or traffic disruptions</li>
+                                    <li>Implemented systematic filing procedures to improve the organization and retrieval of critical paperwork for seamless operations</li>
+                                    <li>Conducted thorough performance analysis of driver movements and delivery timelines, reporting key metrics to management for process improvements</li>
+                                    <li>Streamlined communication channels between dispatch, drivers, and clients to enhance service delivery</li>
+                                </ul>
+                                <div class="skills-used">
+                                    <span class="skill-pill">GPS Systems</span>
+                                    <span class="skill-pill">Logistics Software</span>
+                                    <span class="skill-pill">Data Analysis</span>
+                                    <span class="skill-pill">Performance Metrics</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Current Role: Executive Assistant -->
-                <div class="experience-card current-role">
-                    <div class="company-logo">
-                        <!-- MEDIA REPLACEMENT: Add Bandwidth Global logo -->
-                        <img src="assets/images/logos/bandwidth-global-logo.png" alt="Bandwidth Global Logo" class="company-logo-img">
+                <!-- Excelerate Experience -->
+                <div class="company-experience">
+                    <div class="company-header" onclick="toggleExperience('excelerate-exp')">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-chart-line company-logo-icon"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3 class="company-name" onclick="visitCompanyWebsite('excelerate')">Excelerate</h3>
+                                <p class="company-period">August 2024 - September 2024</p>
+                            </div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
                     </div>
-                    <div class="experience-content">
-                        <h3>Executive Assistant (Client Relations Manager & Dispatcher)</h3>
-                        <p class="company">Bandwidth Global</p>
-                        <p class="location">Tse Addo, Accra</p>
-                        <div class="date-badge current">Sep 2024 - Present</div>
-                        
-                        <p class="role-description">
-                            Managed real-time tracking of vehicles using GPS and logistics software to monitor shipment 
-                            progress and provide updates to clients and stakeholders.
-                        </p>
-                        <ul class="achievements">
-                            <li>Facilitated problem-solving by providing contingency plans during emergencies such as vehicle breakdowns or traffic disruptions</li>
-                            <li>Implemented systematic filing procedures to improve the organization and retrieval of critical paperwork for seamless operations</li>
-                            <li>Conducted thorough performance analysis of driver movements and delivery timelines, reporting key metrics to management for process improvements</li>
-                            <li>Streamlined communication channels between dispatch, drivers, and clients to enhance service delivery</li>
-                        </ul>
-                        <div class="skills-used">
-                            <span class="skill-pill">GPS Systems</span>
-                            <span class="skill-pill">Logistics Software</span>
-                            <span class="skill-pill">Data Analysis</span>
-                            <span class="skill-pill">Performance Metrics</span>
+                    <div class="company-roles" id="excelerate-exp-roles">
+                        <div class="role-item">
+                            <div class="role-content">
+                                <h4>Data Analyst (Intern)</h4>
+                                <p class="role-duration">August 2024 - September 2024</p>
+                                <p class="role-description">
+                                    Assisted in gathering, cleaning, and preprocessing large datasets from various sources 
+                                    to ensure data accuracy and consistency for analysis.
+                                </p>
+                                <ul class="achievements">
+                                    <li>Conducted exploratory data analysis to uncover patterns, correlations, and insights, using statistical tools and visualization techniques to support decision-making</li>
+                                    <li>Created detailed reports and visualizations to communicate findings and recommendations to stakeholders, translating complex data into actionable insights</li>
+                                    <li>Helped develop and evaluate machine learning models using techniques such as regression, classification, and clustering</li>
+                                    <li>Assessed model performance using metrics like accuracy, precision, and recall to ensure reliable data-driven solutions</li>
+                                </ul>
+                                <div class="skills-used">
+                                    <span class="skill-pill">Data Analysis</span>
+                                    <span class="skill-pill">Machine Learning</span>
+                                    <span class="skill-pill">Statistical Analysis</span>
+                                    <span class="skill-pill">Data Visualization</span>
+                                    <span class="skill-pill">Python</span>
+                                    <span class="skill-pill">Data Preprocessing</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Data Analyst Internship -->
-                <div class="experience-card">
-                    <div class="company-logo">
-                        <!-- MEDIA REPLACEMENT: Add Excelerate logo -->
-                        <img src="assets/images/logos/excelerate-logo.png" alt="Excelerate Logo" class="company-logo-img">
+                <!-- Wilena Nursery and Preparatory School Experience -->
+                <div class="company-experience">
+                    <div class="company-header" onclick="toggleExperience('wilena-exp')">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-graduation-cap company-logo-icon"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3 class="company-name" onclick="visitCompanyWebsite('wilena')">Wilena Nursery and Preparatory School</h3>
+                                <p class="company-period">February 2024 - August 2024</p>
+                            </div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
                     </div>
-                    <div class="experience-content">
-                        <h3>Data Analyst (Intern)</h3>
-                        <p class="company">Excelerate</p>
-                        <p class="location">Remote</p>
-                        <div class="date-badge">Aug 2024 - Sep 2024</div>
-                        
-                        <p class="role-description">
-                            Assisted in gathering, cleaning, and preprocessing large datasets from various sources to 
-                            ensure data accuracy and consistency for analysis.
-                        </p>
-                        <ul class="achievements">
-                            <li>Conducted exploratory data analysis to uncover patterns, correlations, and insights, using statistical tools and visualization techniques to support decision-making</li>
-                            <li>Created detailed reports and visualizations to communicate findings and recommendations to stakeholders, translating complex data into actionable insights</li>
-                            <li>Helped develop and evaluate machine learning models using techniques such as regression, classification, and clustering</li>
-                            <li>Assessed model performance using metrics like accuracy, precision, and recall to ensure optimal results</li>
-                        </ul>
-                        <div class="skills-used">
-                            <span class="skill-pill">Python</span>
-                            <span class="skill-pill">Data Preprocessing</span>
-                            <span class="skill-pill">Machine Learning</span>
-                            <span class="skill-pill">Statistical Analysis</span>
+                    <div class="company-roles" id="wilena-exp-roles">
+                        <div class="role-item">
+                            <div class="role-content">
+                                <h4>Teacher</h4>
+                                <p class="role-duration">February 2024 - August 2024</p>
+                                <p class="role-description">
+                                    Enhanced student engagement through the creation of interactive lesson plans, resulting in 
+                                    improved academic performance and classroom participation.
+                                </p>
+                                <ul class="achievements">
+                                    <li>Ensured the safety of all students by implementing emergency response procedures, resulting in a secure and nurturing environment</li>
+                                    <li>Provided constructive feedback to students based on thorough assessment, resulting in improved academic growth and deeper understanding</li>
+                                    <li>Strengthened educational partnerships by maintaining clear communication with students, parents, and colleagues</li>
+                                    <li>Fostered a cohesive and productive learning environment through collaborative teaching methods</li>
+                                </ul>
+                                <div class="skills-used">
+                                    <span class="skill-pill">Communication</span>
+                                    <span class="skill-pill">Leadership</span>
+                                    <span class="skill-pill">Assessment</span>
+                                    <span class="skill-pill">Relationship Building</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Teacher Role -->
-                <div class="experience-card">
-                    <div class="company-logo">
-                        <!-- MEDIA REPLACEMENT: Add Wilena School logo -->
-                        <img src="assets/images/logos/wilena-school-logo.png" alt="Wilena Nursery and Preparatory School Logo" class="company-logo-img">
+                <!-- Ghana Statistical Service Experience -->
+                <div class="company-experience">
+                    <div class="company-header" onclick="toggleExperience('gss-exp')">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-chart-bar company-logo-icon"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3 class="company-name" onclick="visitCompanyWebsite('gss')">Ghana Statistical Service</h3>
+                                <p class="company-period">January 2024 - February 2024</p>
+                            </div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
                     </div>
-                    <div class="experience-content">
-                        <h3>Teacher</h3>
-                        <p class="company">Wilena Nursery and Preparatory School</p>
-                        <p class="location">Mallam, Accra</p>
-                        <div class="date-badge">Feb 2024 - Aug 2024</div>
-                        
-                        <p class="role-description">
-                            Enhanced student engagement through the creation of interactive lesson plans, resulting in 
-                            improved academic performance and classroom participation.
-                        </p>
-                        <ul class="achievements">
-                            <li>Ensured the safety of all students by implementing emergency response procedures, resulting in a secure and nurturing environment</li>
-                            <li>Provided constructive feedback to students based on thorough assessment, resulting in improved academic growth and deeper understanding</li>
-                            <li>Strengthened educational partnerships by maintaining clear communication with students, parents, and colleagues</li>
-                            <li>Fostered a cohesive and productive learning environment through collaborative teaching methods</li>
-                        </ul>
-                        <div class="skills-used">
-                            <span class="skill-pill">Communication</span>
-                            <span class="skill-pill">Leadership</span>
-                            <span class="skill-pill">Assessment</span>
-                            <span class="skill-pill">Relationship Building</span>
+                    <div class="company-roles" id="gss-exp-roles">
+                        <div class="role-item">
+                            <div class="role-content">
+                                <h4>Field Officer (Contract)</h4>
+                                <p class="role-duration">January 2024 - February 2024</p>
+                                <p class="role-description">
+                                    Successfully covered 100% of assigned establishments as a field enumerator for the Ghana 
+                                    Statistical Service for the 2024 Integrated Business Establishment Survey.
+                                </p>
+                                <ul class="achievements">
+                                    <li>Conducted 100+ interviews to collect census data, ensuring accurate and comprehensive information for analysis and decision-making purposes</li>
+                                    <li>Partnered with colleagues to tackle challenges during data collection, cultivating a supportive atmosphere and ensuring timely completion of all tasks</li>
+                                    <li>Ensured 100% accuracy of collected data by implementing quality control measures</li>
+                                    <li>Enhanced the credibility of research findings and recommendations through meticulous data collection practices</li>
+                                </ul>
+                                <div class="skills-used">
+                                    <span class="skill-pill">Data Collection</span>
+                                    <span class="skill-pill">Quality Control</span>
+                                    <span class="skill-pill">Survey Research</span>
+                                    <span class="skill-pill">Team Collaboration</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Field Officer -->
-                <div class="experience-card">
-                    <div class="company-logo">
-                        <!-- MEDIA REPLACEMENT: Add Ghana Statistical Service logo -->
-                        <img src="assets/images/logos/ghana-statistical-service-logo.png" alt="Ghana Statistical Service Logo" class="company-logo-img">
+                <!-- Amata Cosmetics Ltd Experience -->
+                <div class="company-experience">
+                    <div class="company-header" onclick="toggleExperience('amata-exp')">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-shopping-bag company-logo-icon"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3 class="company-name" onclick="visitCompanyWebsite('amata')">Amata Cosmetics Ltd</h3>
+                                <p class="company-period">July 2021 - December 2023</p>
+                            </div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
                     </div>
-                    <div class="experience-content">
-                        <h3>Field Officer (Contract)</h3>
-                        <p class="company">Ghana Statistical Service</p>
-                        <p class="location">Korle Klottey, Accra</p>
-                        <div class="date-badge">Jan 2024 - Feb 2024</div>
-                        
-                        <p class="role-description">
-                            Successfully covered 100% of assigned establishments as a field enumerator for the Ghana 
-                            Statistical Service for the 2024 Integrated Business Establishment Survey.
-                        </p>
-                        <ul class="achievements">
-                            <li>Conducted 100+ interviews to collect census data, ensuring accurate and comprehensive information for analysis and decision-making purposes</li>
-                            <li>Partnered with colleagues to tackle challenges during data collection, cultivating a supportive atmosphere and ensuring timely completion of all tasks</li>
-                            <li>Ensured 100% accuracy of collected data by implementing quality control measures</li>
-                            <li>Enhanced the credibility of research findings and recommendations through meticulous data collection practices</li>
-                        </ul>
-                        <div class="skills-used">
-                            <span class="skill-pill">Data Collection</span>
-                            <span class="skill-pill">Quality Control</span>
-                            <span class="skill-pill">Survey Research</span>
-                            <span class="skill-pill">Team Collaboration</span>
+                    <div class="company-roles" id="amata-exp-roles">
+                        <div class="role-item">
+                            <div class="role-content">
+                                <h4>Sales Associate</h4>
+                                <p class="role-duration">July 2021 - December 2023</p>
+                                <p class="role-description">
+                                    Secured a number of new client meetings, resulting in increased sales opportunities for the business.
+                                </p>
+                                <ul class="achievements">
+                                    <li>Sales reporting and reviewing performance, analyzing customer interactions and sales data</li>
+                                    <li>Led to the development of targeted sales strategies, resulting in increased customer acquisition and retention</li>
+                                    <li>Oversaw receiving, warehousing and distribution operations, resulting in improved inventory accuracy</li>
+                                    <li>Maintained documentation and kept accurate records of warehouse activities, reducing inventory discrepancies</li>
+                                </ul>
+                                <div class="skills-used">
+                                    <span class="skill-pill">Sales Strategy</span>
+                                    <span class="skill-pill">Customer Relations</span>
+                                    <span class="skill-pill">Inventory Management</span>
+                                    <span class="skill-pill">Performance Analysis</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Sales Associate -->
-                <div class="experience-card">
-                    <div class="company-logo">
-                        <!-- MEDIA REPLACEMENT: Add Amata Cosmetics logo -->
-                        <img src="assets/images/logos/amata-cosmetics-logo.png" alt="Amata Cosmetics Ltd Logo" class="company-logo-img">
+                <!-- Gold Coast Restaurant Ltd Experience -->
+                <div class="company-experience">
+                    <div class="company-header" onclick="toggleExperience('goldcoast-exp')">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-utensils company-logo-icon"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3 class="company-name" onclick="visitCompanyWebsite('goldcoast')">Gold Coast Restaurant Ltd</h3>
+                                <p class="company-period">May 2017 - June 2020, January 2021 - June 2021</p>
+                            </div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
                     </div>
-                    <div class="experience-content">
-                        <h3>Sales Associate</h3>
-                        <p class="company">Amata Cosmetics Ltd</p>
-                        <p class="location">Makola, Accra</p>
-                        <div class="date-badge">Jul 2021 - Dec 2023</div>
-                        
-                        <p class="role-description">
-                            Secured a number of new client meetings, resulting in increased sales opportunities for the business.
-                        </p>
-                        <ul class="achievements">
-                            <li>Sales reporting and reviewing performance, analyzing customer interactions and sales data</li>
-                            <li>Led to the development of targeted sales strategies, resulting in increased customer acquisition and retention</li>
-                            <li>Oversaw receiving, warehousing and distribution operations, resulting in improved inventory accuracy</li>
-                            <li>Maintained documentation and kept accurate records of warehouse activities, reducing inventory discrepancies</li>
-                        </ul>
-                        <div class="skills-used">
-                            <span class="skill-pill">Sales Strategy</span>
-                            <span class="skill-pill">Customer Relations</span>
-                            <span class="skill-pill">Inventory Management</span>
-                            <span class="skill-pill">Performance Analysis</span>
+                    <div class="company-roles" id="goldcoast-exp-roles">
+                        <div class="role-item">
+                            <div class="role-content">
+                                <h4>Stores and Operations Manager</h4>
+                                <p class="role-duration">January 2021 - June 2021</p>
+                                <p class="role-description">
+                                    Compiled and submitted detailed daily and monthly reports on the status of consumable materials, 
+                                    facilitating efficient inventory management and cost-effective procurement strategies.
+                                </p>
+                                <ul class="achievements">
+                                    <li>Oversaw kitchen and production operations, ensuring smooth workflow, adherence to quality standards, and timely delivery</li>
+                                    <li>Directed administrative functions at the East Legon Branch, orchestrating efficient office operations</li>
+                                    <li>Optimized resource utilization and enhanced overall organizational productivity</li>
+                                    <li>Implemented rigorous inventory control measures, identifying and categorizing slow-moving and non-moving items</li>
+                                </ul>
+                                <div class="skills-used">
+                                    <span class="skill-pill">Operations Management</span>
+                                    <span class="skill-pill">Inventory Control</span>
+                                    <span class="skill-pill">Quality Assurance</span>
+                                    <span class="skill-pill">Team Management</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="role-item">
+                            <div class="role-content">
+                                <h4>Stores and Operations Manager</h4>
+                                <p class="role-duration">May 2017 - June 2020</p>
+                                <p class="role-description">
+                                    Compiled and submitted detailed daily and monthly reports on the status of consumable materials, 
+                                    facilitating efficient inventory management and cost-effective procurement strategies.
+                                </p>
+                                <ul class="achievements">
+                                    <li>Oversaw kitchen and production operations, ensuring smooth workflow, adherence to quality standards, and timely delivery of products</li>
+                                    <li>Directed administrative functions at the East Legon Branch, orchestrating efficient office operations</li>
+                                    <li>Optimized resource utilization and enhanced overall organizational productivity</li>
+                                    <li>Implemented rigorous inventory control measures to streamline procurement processes and minimize inventory holding costs</li>
+                                </ul>
+                                <div class="skills-used">
+                                    <span class="skill-pill">Operations Management</span>
+                                    <span class="skill-pill">Inventory Control</span>
+                                    <span class="skill-pill">Process Optimization</span>
+                                    <span class="skill-pill">Administrative Leadership</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Stores and Operations Manager (Recent) -->
-                <div class="experience-card">
-                    <div class="company-logo">
-                        <!-- MEDIA REPLACEMENT: Add Gold Coast Restaurant logo -->
-                        <img src="assets/images/logos/gold-coast-restaurant-logo.png" alt="Gold Coast Restaurant Ltd Logo" class="company-logo-img">
+                <!-- Nericks Interiors Ltd Experience -->
+                <div class="company-experience">
+                    <div class="company-header" onclick="toggleExperience('nericks-exp')">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-home company-logo-icon"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3 class="company-name" onclick="visitCompanyWebsite('nericks')">Nericks Interiors Ltd</h3>
+                                <p class="company-period">July 2020 - January 2021</p>
+                            </div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
                     </div>
-                    <div class="experience-content">
-                        <h3>Stores and Operations Manager</h3>
-                        <p class="company">Gold Coast Restaurant Ltd</p>
-                        <p class="location">Cantonments, Accra</p>
-                        <div class="date-badge">Jan 2021 - Jun 2021</div>
-                        
-                        <p class="role-description">
-                            Compiled and submitted detailed daily and monthly reports on the status of consumable materials, 
-                            facilitating efficient inventory management and cost-effective procurement strategies.
-                        </p>
-                        <ul class="achievements">
-                            <li>Oversaw kitchen and production operations, ensuring smooth workflow, adherence to quality standards, and timely delivery</li>
-                            <li>Directed administrative functions at the East Legon Branch, orchestrating efficient office operations</li>
-                            <li>Optimized resource utilization and enhanced overall organizational productivity</li>
-                            <li>Implemented rigorous inventory control measures, identifying and categorizing slow-moving and non-moving items</li>
-                        </ul>
-                        <div class="skills-used">
-                            <span class="skill-pill">Operations Management</span>
-                            <span class="skill-pill">Inventory Control</span>
-                            <span class="skill-pill">Quality Assurance</span>
-                            <span class="skill-pill">Team Management</span>
+                    <div class="company-roles" id="nericks-exp-roles">
+                        <div class="role-item">
+                            <div class="role-content">
+                                <h4>Sales Executive</h4>
+                                <p class="role-duration">July 2020 - January 2021</p>
+                                <p class="role-description">
+                                    Facilitated seamless communication between the company and its clients, addressing inquiries, 
+                                    providing strategic counsel, and introducing innovative product solutions.
+                                </p>
+                                <ul class="achievements">
+                                    <li>Drove sales of company products and services through targeted marketing strategies, resulting in increased revenue and market penetration</li>
+                                    <li>Produced comprehensive reports detailing marketing activities, encompassing campaign performance metrics and strategic insights</li>
+                                    <li>Provided actionable recommendations for optimization to improve business performance</li>
+                                    <li>Executed precise installation of curtains, blinds, and various interior decoration items, ensuring impeccable craftsmanship and client satisfaction</li>
+                                </ul>
+                                <div class="skills-used">
+                                    <span class="skill-pill">Sales Strategy</span>
+                                    <span class="skill-pill">Client Communication</span>
+                                    <span class="skill-pill">Marketing</span>
+                                    <span class="skill-pill">Installation Services</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Sales Executive -->
-                <div class="experience-card">
-                    <div class="company-logo">
-                        <!-- MEDIA REPLACEMENT: Add Nericks Interiors logo -->
-                        <img src="assets/images/logos/nericks-interiors-logo.png" alt="Nericks Interiors Ltd Logo" class="company-logo-img">
-                    </div>
-                    <div class="experience-content">
-                        <h3>Sales Executive</h3>
-                        <p class="company">Nericks Interiors Ltd</p>
-                        <p class="location">Mallam, Accra</p>
-                        <div class="date-badge">Jul 2020 - Jan 2021</div>
-                        
-                        <p class="role-description">
-                            Facilitated seamless communication between the company and its clients, addressing inquiries, 
-                            providing strategic counsel, and introducing innovative product solutions.
-                        </p>
-                        <ul class="achievements">
-                            <li>Drove sales of company products and services through targeted marketing strategies, resulting in increased revenue and market penetration</li>
-                            <li>Produced comprehensive reports detailing marketing activities, encompassing campaign performance metrics and strategic insights</li>
-                            <li>Provided actionable recommendations for optimization to improve business performance</li>
-                            <li>Executed precise installation of curtains, blinds, and various interior decoration items, ensuring impeccable craftsmanship and client satisfaction</li>
-                        </ul>
-                        <div class="skills-used">
-                            <span class="skill-pill">Sales Strategy</span>
-                            <span class="skill-pill">Client Communication</span>
-                            <span class="skill-pill">Marketing</span>
-                            <span class="skill-pill">Installation Services</span>
+                <!-- National Lottery Authority Experience -->
+                <div class="company-experience">
+                    <div class="company-header" onclick="toggleExperience('nla-exp')">
+                        <div class="company-info">
+                            <div class="company-logo">
+                                <i class="fas fa-ticket-alt company-logo-icon"></i>
+                            </div>
+                            <div class="company-details">
+                                <h3 class="company-name" onclick="visitCompanyWebsite('nla')">National Lottery Authority</h3>
+                                <p class="company-period">January 2017 - May 2017</p>
+                            </div>
+                        </div>
+                        <div class="expand-icon">
+                            <i class="fas fa-chevron-down"></i>
                         </div>
                     </div>
-                </div>
-
-                <!-- Stores and Operations Manager (Earlier) -->
-                <div class="experience-card">
-                    <div class="company-logo">
-                        <!-- MEDIA REPLACEMENT: Add Gold Coast Restaurant logo -->
-                        <img src="assets/images/logos/gold-coast-restaurant-logo.png" alt="Gold Coast Restaurant Ltd Logo" class="company-logo-img">
-                    </div>
-                    <div class="experience-content">
-                        <h3>Stores and Operations Manager</h3>
-                        <p class="company">Gold Coast Restaurant Ltd</p>
-                        <p class="location">Cantonments, Accra</p>
-                        <div class="date-badge">May 2017 - Jun 2020</div>
-                        
-                        <p class="role-description">
-                            Compiled and submitted detailed daily and monthly reports on the status of consumable materials, 
-                            facilitating efficient inventory management and cost-effective procurement strategies.
-                        </p>
-                        <ul class="achievements">
-                            <li>Oversaw kitchen and production operations, ensuring smooth workflow, adherence to quality standards, and timely delivery of products</li>
-                            <li>Directed administrative functions at the East Legon Branch, orchestrating efficient office operations</li>
-                            <li>Optimized resource utilization and enhanced overall organizational productivity</li>
-                            <li>Implemented rigorous inventory control measures to streamline procurement processes and minimize inventory holding costs</li>
-                        </ul>
-                        <div class="skills-used">
-                            <span class="skill-pill">Operations Management</span>
-                            <span class="skill-pill">Inventory Control</span>
-                            <span class="skill-pill">Process Optimization</span>
-                            <span class="skill-pill">Administrative Leadership</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Retailer -->
-                <div class="experience-card">
-                    <div class="company-logo">
-                        <!-- MEDIA REPLACEMENT: Add National Lottery Authority logo -->
-                        <img src="assets/images/logos/national-lottery-authority-logo.png" alt="National Lottery Authority Logo" class="company-logo-img">
-                    </div>
-                    <div class="experience-content">
-                        <h3>Retailer</h3>
-                        <p class="company">National Lottery Authority (SIMNET GH LTD.)</p>
-                        <p class="location">Castle Road, Accra</p>
-                        <div class="date-badge">Jan 2017 - May 2017</div>
-                        
-                        <p class="role-description">
-                            Served as a dedicated retailer under SIMNET GH LTD., a subsidiary of the National Lottery Authority, 
-                            effectively managing sales operations and fostering customer engagement.
-                        </p>
-                        <ul class="achievements">
-                            <li>Successfully marketed and sold lottery tickets, driving revenue generation and contributing to the achievement of sales targets</li>
-                            <li>Maintained accurate transaction records and financial documentation</li>
-                            <li>Provided excellent customer service, building relationships with regular customers</li>
-                            <li>Adhered to all regulatory requirements and company policies for lottery ticket sales</li>
-                        </ul>
-                        <div class="skills-used">
-                            <span class="skill-pill">Retail Sales</span>
-                            <span class="skill-pill">Customer Service</span>
-                            <span class="skill-pill">Financial Management</span>
-                            <span class="skill-pill">Regulatory Compliance</span>
+                    <div class="company-roles" id="nla-exp-roles">
+                        <div class="role-item">
+                            <div class="role-content">
+                                <h4>Retailer</h4>
+                                <p class="role-duration">January 2017 - May 2017</p>
+                                <p class="role-description">
+                                    Served as a dedicated retailer under SIMNET GH LTD., a subsidiary of the National Lottery Authority, 
+                                    effectively managing sales operations and fostering customer engagement.
+                                </p>
+                                <ul class="achievements">
+                                    <li>Successfully marketed and sold lottery tickets, driving revenue generation and contributing to the achievement of sales targets</li>
+                                    <li>Maintained accurate transaction records and financial documentation</li>
+                                    <li>Provided excellent customer service, building relationships with regular customers</li>
+                                    <li>Adhered to all regulatory requirements and company policies for lottery ticket sales</li>
+                                </ul>
+                                <div class="skills-used">
+                                    <span class="skill-pill">Retail Sales</span>
+                                    <span class="skill-pill">Customer Service</span>
+                                    <span class="skill-pill">Financial Management</span>
+                                    <span class="skill-pill">Regulatory Compliance</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

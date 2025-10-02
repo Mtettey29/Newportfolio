@@ -98,4 +98,62 @@ document.addEventListener('DOMContentLoaded', function () {
         item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(item);
     });
+
+    // Experience Section Toggle
+    window.toggleExperience = function(companyId) {
+        const rolesSection = document.getElementById(companyId + '-roles');
+        const icon = document.querySelector(`[onclick="toggleExperience('${companyId}')"] .expand-icon i`);
+        
+        if (rolesSection && (rolesSection.style.display === 'none' || rolesSection.style.display === '')) {
+            rolesSection.style.display = 'block';
+            if (icon) icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+        } else if (rolesSection) {
+            rolesSection.style.display = 'none';
+            if (icon) icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+        }
+    };
+
+    // Visit Company Website
+    window.visitCompanyWebsite = function(company) {
+        const websites = {
+            'excelerate': 'https://excelerate.co',
+            'bandwidth': 'https://bandwidthglobal.com'
+        };
+        
+        if (websites[company]) {
+            window.open(websites[company], '_blank');
+        }
+    };
+
+    // Project Toggle Function
+    window.toggleProject = function(projectId) {
+        const projectDetails = document.getElementById(projectId + '-details');
+        const button = document.querySelector(`[onclick="toggleProject('${projectId}')"]`);
+        const toggleText = button.querySelector('.toggle-text');
+        const toggleIcon = button.querySelector('.toggle-icon');
+        
+        if (projectDetails && (projectDetails.style.display === 'none' || projectDetails.style.display === '')) {
+            projectDetails.style.display = 'block';
+            toggleText.textContent = 'Less';
+            toggleIcon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+        } else if (projectDetails) {
+            projectDetails.style.display = 'none';
+            toggleText.textContent = 'More';
+            toggleIcon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+        }
+    };
+
+    // Volunteer Category Toggle Function (kept for potential future use)
+    window.toggleVolunteerCategory = function(categoryId) {
+        const categoryContent = document.getElementById(categoryId + '-volunteer');
+        const icon = document.querySelector(`[onclick="toggleVolunteerCategory('${categoryId}')"] .expand-icon i`);
+        
+        if (categoryContent && (categoryContent.style.display === 'none' || categoryContent.style.display === '')) {
+            categoryContent.style.display = 'block';
+            if (icon) icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+        } else if (categoryContent) {
+            categoryContent.style.display = 'none';
+            if (icon) icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+        }
+    };
 });
