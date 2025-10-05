@@ -41,6 +41,68 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Collapsible sections functionality
+    window.toggleSection = function(sectionId) {
+        const content = document.getElementById(sectionId + '-content');
+        const icon = document.getElementById(sectionId + '-icon');
+        
+        if (content && icon) {
+            const isExpanded = content.classList.contains('expanded');
+            
+            if (isExpanded) {
+                // Collapse
+                content.classList.remove('expanded');
+                icon.classList.remove('rotated');
+            } else {
+                // Expand
+                content.classList.add('expanded');
+                icon.classList.add('rotated');
+            }
+        }
+    };
+
+    // Individual certification toggle functionality
+    window.toggleCertification = function(certId) {
+        const content = document.getElementById(certId + '-content');
+        const icon = document.getElementById(certId + '-icon');
+        
+        if (content && icon) {
+            const isExpanded = content.classList.contains('expanded');
+            
+            if (isExpanded) {
+                // Collapse
+                content.classList.remove('expanded');
+                icon.classList.remove('rotated');
+            } else {
+                // Expand
+                content.classList.add('expanded');
+                icon.classList.add('rotated');
+            }
+        }
+    };
+
+    // Initialize sections as collapsed
+    document.addEventListener('DOMContentLoaded', function() {
+        const collapsibleContents = document.querySelectorAll('.collapsible-content');
+        collapsibleContents.forEach(content => {
+            content.classList.remove('expanded');
+        });
+    });
+
     // Contact Form Handling
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {

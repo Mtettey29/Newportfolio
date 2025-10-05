@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Preview - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .color-demo {
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .primary-demo {
+            background: var(--primary-color);
+            color: white;
+        }
+        .secondary-demo {
+            background: var(--secondary-color);
+            color: var(--text-dark);
+            border: 2px solid var(--primary-color);
+        }
+        .accent-demo {
+            background: var(--accent-color);
+            color: var(--text-dark);
+            border: 2px solid var(--text-muted);
+        }
+        .light-blue-demo {
+            background: var(--light-blue);
+            color: var(--text-dark);
+        }
+        .blue-medium-demo {
+            background: var(--blue-medium);
+            color: white;
+        }
+        body {
+            font-family: var(--font-family);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Portfolio Color Scheme Preview</h1>
+    <h2>White, Blue & Black Theme</h2>
+    
+    <div class="color-demo primary-demo">
+        <h3>Primary Color: Blue (#0066cc)</h3>
+        <p>This is the main brand color used for buttons, links, and accents</p>
+    </div>
+    
+    <div class="color-demo secondary-demo">
+        <h3>Secondary Color: Light Gray (#f8f9fa)</h3>
+        <p>Used for backgrounds and subtle elements</p>
+    </div>
+    
+    <div class="color-demo accent-demo">
+        <h3>Accent Color: White (#ffffff)</h3>
+        <p>Primary background color and contrast element</p>
+    </div>
+    
+    <div class="color-demo light-blue-demo">
+        <h3>Light Blue: (#e3f2fd)</h3>
+        <p>Used for hover states and light backgrounds</p>
+    </div>
+    
+    <div class="color-demo blue-medium-demo">
+        <h3>Medium Blue: (#4285f4)</h3>
+        <p>Used for interactive elements and highlights</p>
+    </div>
+    
+    <div style="background: var(--text-dark); color: white; padding: 20px; border-radius: 10px; margin: 20px 0; text-align: center;">
+        <h3>Text Dark: Black (#000000)</h3>
+        <p>Primary text color for maximum contrast</p>
+    </div>
+    
+    <div style="background: white; color: var(--text-muted); padding: 20px; border-radius: 10px; margin: 20px 0; text-align: center; border: 1px solid #ddd;">
+        <h3>Text Muted: Gray (#6c757d)</h3>
+        <p>Secondary text color for less prominent content</p>
+    </div>
+    
+    <div style="margin: 40px 0; text-align: center;">
+        <a href="index.html" style="background: var(--primary-color); color: white; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: 600;">
+            View Full Portfolio →
+        </a>
+    </div>
+</body>
+</html>
