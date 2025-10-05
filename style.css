@@ -528,7 +528,7 @@ label, legend, fieldset {
 }
 
 .achievements li::before {
-    content: '●';
+    content: '•';
     position: absolute;
     left: 0;
     color: var(--primary-color);
@@ -972,7 +972,7 @@ label, legend, fieldset {
 }
 
 .achievements li::before {
-    content: '▸';
+    content: '•';
     color: var(--primary-color);
     font-weight: bold;
     position: absolute;
