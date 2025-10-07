@@ -63,6 +63,15 @@ label, legend, fieldset {
     font-weight: 700;
     color: var(--text-dark);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .navbar a {
@@ -884,8 +893,6 @@ label, legend, fieldset {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--secondary-color);
-    border-radius: 50%;
     flex-shrink: 0;
 }
 
@@ -893,7 +900,6 @@ label, legend, fieldset {
     width: 45px;
     height: 45px;
     object-fit: contain;
-    border-radius: 8px;
 }
 
 .company-logo-icon {
@@ -2590,23 +2596,18 @@ label, legend, fieldset {
     flex-shrink: 0;
     width: 90px;
     height: 90px;
-    border-radius: 50%;
-    background: var(--accent-color);
-    border: 3px solid var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 2;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(46, 111, 64, 0.15);
 }
 
 .company-logo-img {
     width: 50px;
     height: 50px;
     object-fit: contain;
-    border-radius: 8px;
 }
 
 /* If no logo image is available, show placeholder */
